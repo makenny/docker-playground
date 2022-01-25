@@ -1,4 +1,4 @@
-from collections.abc import MutableMapping
+from collections.abc import Mapping
 from flask import Flask, render_template
 import os
 import random
@@ -19,7 +19,6 @@ images = [
     "https://firebasestorage.googleapis.com/v0/b/docker-curriculum.appspot.com/o/catnip%2F8.gif?alt=media&token=80a48714-7aaa-45fa-a36b-a7653dc3292b",
     "https://firebasestorage.googleapis.com/v0/b/docker-curriculum.appspot.com/o/catnip%2F9.gif?alt=media&token=a57a1c71-a8af-4170-8fee-bfe11809f0b3",
 ]
-
 
 @app.route("/")
 def index():
